@@ -4,10 +4,7 @@
   <div>
     <h1>this is test1</h1>
     <div>
-      <a href="/">go back</a>
-    </div>
-    <div>
-      <a href="/test2">go test2</a>
+      <a href="/">go main</a>
     </div>
 
     <div>
