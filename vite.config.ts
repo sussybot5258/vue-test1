@@ -14,6 +14,6 @@ export default defineConfig({
     },
   },
   build: {
-    assetsDir: "projects/test1",
+    assetsDir: "projects/test1/assets",
   },
 });
