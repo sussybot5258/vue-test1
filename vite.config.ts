@@ -14,4 +14,7 @@ export default defineConfig({
       "@": Bun.fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
+  build: {
+    assetsDir: "./test1/assets",
+  },
 });
