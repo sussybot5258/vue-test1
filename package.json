@@ -5,10 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "bunx --bun vite",
-    "build": "bun check && bun build-only",
     "preview": "bunx --bun vite preview",
     "check": "bunx --bun vue-tsc --noEmit",
-    "build-only": "bunx --bun vite build --minify false"
+    "build": "bun check && bun build-only",
+    "build-only": "bunx --bun vite build --minify false",
+    "build:submodule": "bun check && bun build-only:submodule",
+    "build-only:submodule": "bunx --bun vite build --minify false --mode submodule"
   },
   "dependencies": {
     "vue": "^3.4.21",
