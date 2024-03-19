@@ -1,0 +1,16 @@
+name: notify sussybot5258.github.io to update submodules and deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  send_repository_dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository Dispatch
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.SUSSY_GITHUBIO_WORKFLOW }}
+          repository: sussybot5258/sussybot5258.github.io
+          event-type: build
